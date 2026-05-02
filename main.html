@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>For You My Bestii</title>
+        <link rel="icon" href="love-logo.png">
+        <style>
+            :root{--pink1:#ffe6f0;--pink2:#ffd1e8;--accent:#ff4d94}
+            *{box-sizing:border-box}
+            html,body{height:110%;margin:0;font-family:Segoe UI,Arial,Helvetica,sans-serif}
+            body{
+                display:flex;align-items:center;justify-content:center;
+                min-height:100vh;background:linear-gradient(135deg,var(--pink1),var(--pink2));
+                color:#370022;padding:2rem;overflow:auto
+            }
+            @media (max-width:600px){
+                body{align-items:flex-start;padding-top:2rem}
+                .card{margin-top:0.5rem}
+            }
+            .card{
+                width:100%;max-width:860px;background:rgba(255,255,255,0.32);
+                border-radius:20px;padding:2.25rem 2.5rem;text-align:center;
+                box-shadow:0 10px 30px rgba(155,30,80,0.12);backdrop-filter:blur(6px)
+            }
+            h1{font-size:2.25rem;margin:0 0 .25rem}
+            .subtitle{margin:0;color:#6f1032;font-weight:600}
+            .dates{margin-top:1rem;color:#7e1140;font-weight:600}
+            .message{margin-top:1.25rem;color:#5a0830;font-size:1.05rem}
+            .hearts{margin-top:1.5rem;display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap}
+            .heart{width:44px;height:44px}
+            .heart svg{width:100%;height:100%;display:block;filter:drop-shadow(0 4px 8px rgba(157,20,80,0.18))}
+            .heart{animation:float 3s ease-in-out infinite}
+            .heart:nth-child(2){animation-duration:3.6s}
+            .heart:nth-child(3){animation-duration:2.6s}
+            .heart:nth-child(4){animation-duration:4s}
+            @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-12px) rotate(-6deg)}100%{transform:translateY(0)}}
+            .footer{margin-top:1.5rem;color:#4c0328;font-weight:600}
+            /* foto ukuran custom*/
+            .photo-section{margin-top:1.25rem;display:flex;justify-content:center}
+            .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;max-width:860px;width:100%;margin:0}
+            .photo-item{background:rgba(255,255,255,0.36);padding:.6rem;border-radius:14px;box-shadow:0 8px 20px rgba(155,30,80,0.08);overflow:hidden}
+            .photo-item img{width:100%;height:auto;object-fit:contain;display:block;border-radius:10px}
+            .photo-caption{margin-top:.5rem;color:#4c0328;font-weight:600;text-align:center;font-size:.95rem}
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <h1>Happy 17th Birthday, Aira!</h1>
+            <p class="subtitle">Untuk my bestiee forever ❤️</p>
+            <p class="dates">6 Mei 2009 — 6 Mei 2026</p>
+            <p class="message">Selamat ulang tahun, Aira!</p>
+            <p class="message">Sangat senang sekali bisa mengenalmu, bahkan tak menyangka bisa selama ini.</p>
+            <p class="message">Aku berterima kasih karena telah menemaniku sampai hari ini. Aku harap cita-cita mu menjadi Dokter dan sukses dunia akhirat bisa tercapai, Aamiin</p>
+
+            <div class="hearts" aria-hidden="true">
+                <span class="heart"> 
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s-8-5.33-8-11a4.5 4.5 0 018.5-3A4.5 4.5 0 0120 10c0 5.67-8 11-8 11z" fill="#ff4d94"/></svg>
+                </span>
+                <span class="heart">
+                    <svg viewBox="0 0 24 24"><path d="M12 21s-8-5.33-8-11a4.5 4.5 0 018.5-3A4.5 4.5 0 0120 10c0 5.67-8 11-8 11z" fill="#ff7ab7"/></svg>
+                </span>
+                <span class="heart">
+                    <svg viewBox="0 0 24 24"><path d="M12 21s-8-5.33-8-11a4.5 4.5 0 018.5-3A4.5 4.5 0 0120 10c0 5.67-8 11-8 11z" fill="#ff2d85"/></svg>
+                </span>
+                <span class="heart">
+                    <svg viewBox="0 0 24 24"><path d="M12 21s-8-5.33-8-11a4.5 4.5 0 018.5-3A4.5 4.5 0 0120 10c0 5.67-8 11-8 11z" fill="#ffc0dd"/></svg>
+                </span>
+            </div>
+            <p class="footer">All my love, forever and always 💖</p>
+            <p style="margin-top: 0.3rem;">- Aal</p>
+            <div class="photo-section" aria-label="Photo gallery">
+                <div class="gallery">
+                    <div class="photo-item">
+                        <img src="photo1.jpg" alt="Aira 1" onerror="this.onerror=null;this">
+                    </div>
+                    <div class="photo-item">
+                        <img src="photo2.jpg" alt="Aira 2" onerror="this.onerror=null;this">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
